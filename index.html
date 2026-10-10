@@ -57,14 +57,15 @@ async function baixar(meta){
   var c=await caches.open(DATA),parts=[],tot=0,done=0;
   $('bar').style.display='block';$('hint').style.display='block';
   for(var i=0;i<meta.partes.length;i++){
-    var u=meta.partes[i],r=await c.match(u);
+    var u=meta.partes[i]+'?v='+meta.versao,r=await c.match(u);
     if(!r){msg('Baixando para usar sem internet…');var n=await fetch(u);if(!n.ok)throw new Error('download');await c.put(u,n.clone());r=n;}
     var buf=new Uint8Array(await r.arrayBuffer());parts.push(buf);done+=buf.length;
     $('barin').style.width=Math.round(100*done/meta.bytes)+'%';
   }
   var all=new Uint8Array(done),o=0;parts.forEach(function(p){all.set(p,o);o+=p.length;});
-  var keep={};meta.partes.forEach(function(p){keep[p]=1;});
-  var reqs=await c.keys();for(var j=0;j<reqs.length;j++){var p=new URL(reqs[j].url).pathname.replace(/^.*\//,'');if(!keep[p])await c.delete(reqs[j]);}
+  var keep={};meta.partes.concat(meta.extras||[]).forEach(function(p){keep[p+'?v='+meta.versao]=1;});
+  (meta.extras||[]).forEach(function(g){var u=g+'?v='+meta.versao;c.match(u).then(function(r){if(!r)fetch(u).then(function(n){if(n.ok)c.put(u,n)}).catch(function(){})})});
+  var reqs=await c.keys();for(var j=0;j<reqs.length;j++){var x=new URL(reqs[j].url),p=x.pathname.replace(/^.*\//,'')+x.search;if(!keep[p])await c.delete(reqs[j]);}
   return all;
 }
 async function abrir(rawKey,meta){

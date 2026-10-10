@@ -1,14 +1,18 @@
 {
- "versao": "202610101111-bee1bf9a",
- "salt": "adnIdRa8q86MWihvlv8giQ==",
- "iv": "FVXHQdv4R50PwW2f",
+ "extras": [
+  "guia-disney.html",
+  "guia-louvre.html"
+ ],
+ "versao": "202610101159-bb73cfd258",
+ "salt": "k9hAO8Qb6eHY4N8DtFGOkA==",
+ "iv": "yIF0ZQxoqqAsWycq",
  "iter": 310000,
  "partes": [
-  "app-202610101111-bee1bf9a-0.bin",
-  "app-202610101111-bee1bf9a-1.bin",
-  "app-202610101111-bee1bf9a-2.bin"
+  "app-0.bin",
+  "app-1.bin",
+  "app-2.bin"
  ],
- "bytes": 22955954,
- "civ": "kFbqohvhz3UyIJlu",
- "check": "wCZZqNsbXdO3BR/SVMcqrH8/CTXwrNr4KeUs"
+ "bytes": 22963365,
+ "civ": "6sei+jk7xBRClJUm",
+ "check": "vA9k23/uNIYrcN7f4ER4ZDnW5oTBwyggPwVm"
 }
