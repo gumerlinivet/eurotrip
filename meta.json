@@ -1,0 +1,14 @@
+{
+ "versao": "202610101111-bee1bf9a",
+ "salt": "adnIdRa8q86MWihvlv8giQ==",
+ "iv": "FVXHQdv4R50PwW2f",
+ "iter": 310000,
+ "partes": [
+  "app-202610101111-bee1bf9a-0.bin",
+  "app-202610101111-bee1bf9a-1.bin",
+  "app-202610101111-bee1bf9a-2.bin"
+ ],
+ "bytes": 22955954,
+ "civ": "kFbqohvhz3UyIJlu",
+ "check": "wCZZqNsbXdO3BR/SVMcqrH8/CTXwrNr4KeUs"
+}
