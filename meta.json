@@ -3,16 +3,15 @@
   "guia-disney.html",
   "guia-louvre.html"
  ],
- "versao": "202610101217-b72f9c469a",
+ "versao": "202610101226-a4b7a1af76",
  "salt": "k9hAO8Qb6eHY4N8DtFGOkA==",
- "iv": "omEB9rtG3OINyKZ/",
+ "iv": "S8RZV4yCYfPi6o7g",
  "iter": 310000,
  "partes": [
   "app-0.bin",
-  "app-1.bin",
-  "app-2.bin"
+  "app-1.bin"
  ],
- "bytes": 23133350,
- "civ": "7FF9ekkVJY+Ctt+i",
- "check": "f9RvhzaIziaRWmKanHncLP2RLrki9w1B9MZb"
+ "bytes": 15442696,
+ "civ": "WCHVYaMxhBkmWddq",
+ "check": "Srr+zaTFNLUiGkJlkF12Ux2Lmc/RQZjoReDJ"
 }
