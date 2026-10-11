@@ -1,17 +1,18 @@
 {
  "extras": [
+  "guia-belgica.html",
   "guia-disney.html",
   "guia-louvre.html"
  ],
- "versao": "202610101238-8a517e36ae",
+ "versao": "202610111012-15ddbd7b6c",
  "salt": "k9hAO8Qb6eHY4N8DtFGOkA==",
- "iv": "ocwE6brpjWJjtK8O",
+ "iv": "TZBVPqalb0z3rcvB",
  "iter": 310000,
  "partes": [
   "app-0.bin",
   "app-1.bin"
  ],
- "bytes": 15442696,
- "civ": "C94Z2iZHNSzrYdbk",
- "check": "IYHZAk8Fu/L+pTynd56RWjzzfIcXajQ3/AyB"
+ "bytes": 15396423,
+ "civ": "y78S4qwUN6Zt5dyf",
+ "check": "GrRzrW8xEPU1wl9SFBlM2r3ox8HKrV9q7sBj"
 }
