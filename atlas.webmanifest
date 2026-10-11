@@ -1,0 +1,23 @@
+{
+ "name": "Atlas Histórico · Eurotrip",
+ "short_name": "Atlas",
+ "start_url": "guia-atlas.html",
+ "scope": "./guia-atlas",
+ "display": "standalone",
+ "background_color": "#11141c",
+ "theme_color": "#11141c",
+ "lang": "pt-BR",
+ "icons": [
+  {
+   "src": "atlas-icon-192.png",
+   "sizes": "192x192",
+   "type": "image/png"
+  },
+  {
+   "src": "atlas-icon-512.png",
+   "sizes": "512x512",
+   "type": "image/png",
+   "purpose": "any maskable"
+  }
+ ]
+}
